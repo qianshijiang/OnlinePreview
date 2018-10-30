@@ -1,0 +1,532 @@
+2018-10-30 17:55:12.291  INFO 7884 --- [main] cn.keking.FilePreviewApplication         : Starting FilePreviewApplication on YY-shijiangQ with PID 7884 (E:\CompanyProject\yunnan\OnlinePreview\jodconverter-web\target\classes started by QSJ in E:\CompanyProject\yunnan\OnlinePreview)
+2018-10-30 17:55:12.323  INFO 7884 --- [main] cn.keking.FilePreviewApplication         : The following profiles are active: dev
+2018-10-30 17:55:12.385  INFO 7884 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b2bbc3: startup date [Tue Oct 30 17:55:12 CST 2018]; root of context hierarchy
+2018-10-30 17:55:14.209  INFO 7884 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8012 (http)
+2018-10-30 17:55:14.224  INFO 7884 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-30 17:55:14.224  INFO 7884 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-10-30 17:55:14.302  INFO 7884 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-30 17:55:14.302  INFO 7884 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1933 ms
+2018-10-30 17:55:14.427  INFO 7884 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-30 17:55:14.427  INFO 7884 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-30 17:55:14.427  INFO 7884 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-30 17:55:14.427  INFO 7884 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-30 17:55:14.427  INFO 7884 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'chinesePathFilter' to: [/*]
+2018-10-30 17:55:14.427  INFO 7884 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-30 17:55:14.739  INFO 7884 --- [main] org.redisson.Version                     : Redisson 3.2.0
+2018-10-30 17:55:14.837  INFO 7884 --- [nioEventLoopGroup-2-7] o.r.c.pool.SinglePubSubConnectionPool    : 1 connections initialized for /127.0.0.1:6379
+2018-10-30 17:55:14.837  INFO 7884 --- [nioEventLoopGroup-2-5] o.r.c.pool.MasterConnectionPool          : 10 connections initialized for /127.0.0.1:6379
+2018-10-30 17:55:14.862  INFO 7884 --- [main] cn.keking.service.FileConverQueueTask    : 队列处理文件转换任务启动完成 
+2018-10-30 17:55:14.895  INFO 7884 --- [main] o.a.j.office.ProcessPoolOfficeManager    : ProcessManager implementation is PureJavaProcessManager
+2018-10-30 17:55:14.911  WARN 7884 --- [OfficeProcessThread-0] o.a.jodconverter.office.OfficeProcess    : profile dir 'C:\Users\QSJ\AppData\Local\Temp\.jodconverter_socket_host-127.0.0.1_port-8100' already exists; deleting
+2018-10-30 17:55:15.145  INFO 7884 --- [OfficeProcessThread-0] o.a.jodconverter.office.OfficeProcess    : starting process with acceptString 'socket,host=127.0.0.1,port=8100,tcpNoDelay=1' and profileDir 'C:\Users\QSJ\AppData\Local\Temp\.jodconverter_socket_host-127.0.0.1_port-8100'
+2018-10-30 17:55:15.145  INFO 7884 --- [OfficeProcessThread-0] o.a.jodconverter.office.OfficeProcess    : started process
+2018-10-30 17:55:16.253  INFO 7884 --- [OfficeProcessThread-0] o.a.j.office.OfficeConnection            : connected: 'socket,host=127.0.0.1,port=8100,tcpNoDelay=1'
+2018-10-30 17:55:16.565  INFO 7884 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b2bbc3: startup date [Tue Oct 30 17:55:12 CST 2018]; root of context hierarchy
+2018-10-30 17:55:16.612  INFO 7884 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteFile],methods=[GET]}" onto public java.lang.String cn.keking.web.controller.FileController.deleteFile(java.lang.String) throws com.fasterxml.jackson.core.JsonProcessingException
+2018-10-30 17:55:16.612  INFO 7884 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFiles],methods=[GET]}" onto public java.lang.String cn.keking.web.controller.FileController.getFiles() throws com.fasterxml.jackson.core.JsonProcessingException
+2018-10-30 17:55:16.612  INFO 7884 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/fileUpload],methods=[POST]}" onto public java.lang.String cn.keking.web.controller.FileController.fileUpload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws com.fasterxml.jackson.core.JsonProcessingException
+2018-10-30 17:55:16.612  INFO 7884 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String cn.keking.web.controller.IndexController.root()
+2018-10-30 17:55:16.612  INFO 7884 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String cn.keking.web.controller.IndexController.go2Index()
+2018-10-30 17:55:16.612  INFO 7884 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/picturesPreview],methods=[POST]}" onto public java.lang.String cn.keking.web.controller.OnlinePreviewController.picturesPreview(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest) throws java.io.UnsupportedEncodingException
+2018-10-30 17:55:16.612  INFO 7884 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/picturesPreview],methods=[GET]}" onto public java.lang.String cn.keking.web.controller.OnlinePreviewController.picturesPreview(java.lang.String,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest) throws java.io.UnsupportedEncodingException
+2018-10-30 17:55:16.612  INFO 7884 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/onlinePreview],methods=[GET]}" onto public java.lang.String cn.keking.web.controller.OnlinePreviewController.onlinePreview(java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2018-10-30 17:55:16.612  INFO 7884 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getCorsFile],methods=[GET]}" onto public void cn.keking.web.controller.OnlinePreviewController.getCorsFile(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-10-30 17:55:16.612  INFO 7884 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addTask],methods=[GET]}" onto public java.lang.String cn.keking.web.controller.OnlinePreviewController.addQueueTask(java.lang.String)
+2018-10-30 17:55:16.612  INFO 7884 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-30 17:55:16.628  INFO 7884 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-30 17:55:16.643  INFO 7884 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 17:55:16.643  INFO 7884 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 17:55:16.675  INFO 7884 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 17:55:16.815  INFO 7884 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-30 17:55:16.877  INFO 7884 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-30 17:55:16.924  INFO 7884 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8012 (http)
+2018-10-30 17:55:16.924  INFO 7884 --- [main] cn.keking.FilePreviewApplication         : Started FilePreviewApplication in 4.882 seconds (JVM running for 5.692)
+2018-10-30 17:55:26.533  INFO 7884 --- [http-nio-8012-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 17:55:26.534  INFO 7884 --- [http-nio-8012-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-30 17:55:26.553  INFO 7884 --- [http-nio-8012-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-10-30 17:57:13.282 ERROR 7884 --- [nioEventLoopGroup-2-1] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xf05275ec, L:/127.0.0.1:27237 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 17:57:13.282 ERROR 7884 --- [nioEventLoopGroup-2-3] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xea19ee9a, L:/127.0.0.1:27239 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 17:57:13.282 ERROR 7884 --- [nioEventLoopGroup-2-8] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x7806a68a, L:/127.0.0.1:27241 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 17:57:13.282 ERROR 7884 --- [nioEventLoopGroup-2-2] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x8edab322, L:/127.0.0.1:27246 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 17:57:13.282 ERROR 7884 --- [nioEventLoopGroup-2-7] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x24fb686d, L:/127.0.0.1:27236 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 17:57:13.282 ERROR 7884 --- [nioEventLoopGroup-2-5] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x29467ad0, L:/127.0.0.1:27242 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 17:57:13.282 ERROR 7884 --- [nioEventLoopGroup-2-4] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xed11972c, L:/127.0.0.1:27244 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 17:57:13.282 ERROR 7884 --- [nioEventLoopGroup-2-6] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xb0e6d11c, L:/127.0.0.1:27243 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 17:57:13.289 ERROR 7884 --- [nioEventLoopGroup-2-4] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x6645cabe, L:/127.0.0.1:27238 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 17:57:13.292 ERROR 7884 --- [nioEventLoopGroup-2-2] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xf4c8953c, L:/127.0.0.1:27240 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 17:57:13.296 ERROR 7884 --- [nioEventLoopGroup-2-3] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xcb35e488, L:/127.0.0.1:27245 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 17:57:47.665  INFO 9008 --- [main] cn.keking.FilePreviewApplication         : Starting FilePreviewApplication on YY-shijiangQ with PID 9008 (E:\CompanyProject\yunnan\OnlinePreview\jodconverter-web\target\classes started by QSJ in E:\CompanyProject\yunnan\OnlinePreview)
+2018-10-30 17:57:47.680  INFO 9008 --- [main] cn.keking.FilePreviewApplication         : The following profiles are active: dev
+2018-10-30 17:57:47.748  INFO 9008 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b2bbc3: startup date [Tue Oct 30 17:57:47 CST 2018]; root of context hierarchy
+2018-10-30 17:57:49.654  INFO 9008 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8012 (http)
+2018-10-30 17:57:49.663  INFO 9008 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-30 17:57:49.664  INFO 9008 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-10-30 17:57:49.739  INFO 9008 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-30 17:57:49.740  INFO 9008 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1995 ms
+2018-10-30 17:57:49.888  INFO 9008 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-30 17:57:49.889  INFO 9008 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-30 17:57:49.890  INFO 9008 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-30 17:57:49.890  INFO 9008 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-30 17:57:49.890  INFO 9008 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'chinesePathFilter' to: [/*]
+2018-10-30 17:57:49.891  INFO 9008 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-30 17:57:50.201  INFO 9008 --- [main] org.redisson.Version                     : Redisson 3.2.0
+2018-10-30 17:57:50.274  INFO 9008 --- [nioEventLoopGroup-2-5] o.r.c.pool.MasterConnectionPool          : 10 connections initialized for /127.0.0.1:6379
+2018-10-30 17:57:50.275  INFO 9008 --- [nioEventLoopGroup-2-7] o.r.c.pool.SinglePubSubConnectionPool    : 1 connections initialized for /127.0.0.1:6379
+2018-10-30 17:57:50.292  INFO 9008 --- [main] cn.keking.service.FileConverQueueTask    : 队列处理文件转换任务启动完成 
+2018-10-30 17:57:50.341  INFO 9008 --- [main] o.a.j.office.ProcessPoolOfficeManager    : ProcessManager implementation is PureJavaProcessManager
+2018-10-30 17:57:50.343  WARN 9008 --- [OfficeProcessThread-0] o.a.jodconverter.office.OfficeProcess    : profile dir 'C:\Users\QSJ\AppData\Local\Temp\.jodconverter_socket_host-127.0.0.1_port-8100' already exists; deleting
+2018-10-30 17:57:50.534  INFO 9008 --- [OfficeProcessThread-0] o.a.jodconverter.office.OfficeProcess    : starting process with acceptString 'socket,host=127.0.0.1,port=8100,tcpNoDelay=1' and profileDir 'C:\Users\QSJ\AppData\Local\Temp\.jodconverter_socket_host-127.0.0.1_port-8100'
+2018-10-30 17:57:50.540  INFO 9008 --- [OfficeProcessThread-0] o.a.jodconverter.office.OfficeProcess    : started process
+2018-10-30 17:57:51.617  INFO 9008 --- [OfficeProcessThread-0] o.a.j.office.OfficeConnection            : connected: 'socket,host=127.0.0.1,port=8100,tcpNoDelay=1'
+2018-10-30 17:57:51.855  INFO 9008 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b2bbc3: startup date [Tue Oct 30 17:57:47 CST 2018]; root of context hierarchy
+2018-10-30 17:57:51.896  INFO 9008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteFile],methods=[GET]}" onto public java.lang.String cn.keking.web.controller.FileController.deleteFile(java.lang.String) throws com.fasterxml.jackson.core.JsonProcessingException
+2018-10-30 17:57:51.897  INFO 9008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFiles],methods=[GET]}" onto public java.lang.String cn.keking.web.controller.FileController.getFiles() throws com.fasterxml.jackson.core.JsonProcessingException
+2018-10-30 17:57:51.897  INFO 9008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/fileUpload],methods=[POST]}" onto public java.lang.String cn.keking.web.controller.FileController.fileUpload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws com.fasterxml.jackson.core.JsonProcessingException
+2018-10-30 17:57:51.898  INFO 9008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String cn.keking.web.controller.IndexController.root()
+2018-10-30 17:57:51.899  INFO 9008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String cn.keking.web.controller.IndexController.go2Index()
+2018-10-30 17:57:51.903  INFO 9008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/picturesPreview],methods=[POST]}" onto public java.lang.String cn.keking.web.controller.OnlinePreviewController.picturesPreview(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest) throws java.io.UnsupportedEncodingException
+2018-10-30 17:57:51.904  INFO 9008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/picturesPreview],methods=[GET]}" onto public java.lang.String cn.keking.web.controller.OnlinePreviewController.picturesPreview(java.lang.String,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest) throws java.io.UnsupportedEncodingException
+2018-10-30 17:57:51.905  INFO 9008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/onlinePreview],methods=[GET]}" onto public java.lang.String cn.keking.web.controller.OnlinePreviewController.onlinePreview(java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2018-10-30 17:57:51.905  INFO 9008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getCorsFile],methods=[GET]}" onto public void cn.keking.web.controller.OnlinePreviewController.getCorsFile(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-10-30 17:57:51.906  INFO 9008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addTask],methods=[GET]}" onto public java.lang.String cn.keking.web.controller.OnlinePreviewController.addQueueTask(java.lang.String)
+2018-10-30 17:57:51.910  INFO 9008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-30 17:57:51.911  INFO 9008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-30 17:57:51.934  INFO 9008 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 17:57:51.934  INFO 9008 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 17:57:51.964  INFO 9008 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-30 17:57:52.089  INFO 9008 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-30 17:57:52.169  INFO 9008 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-30 17:57:52.208  INFO 9008 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8012 (http)
+2018-10-30 17:57:52.212  INFO 9008 --- [main] cn.keking.FilePreviewApplication         : Started FilePreviewApplication in 4.793 seconds (JVM running for 5.606)
+2018-10-30 17:58:08.137  INFO 9008 --- [http-nio-8012-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 17:58:08.137  INFO 9008 --- [http-nio-8012-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-30 17:58:08.152  INFO 9008 --- [http-nio-8012-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2018-10-30 18:01:36.872 ERROR 9008 --- [nioEventLoopGroup-2-1] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x4fbb6b3e, L:/127.0.0.1:27438 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 18:01:36.872 ERROR 9008 --- [nioEventLoopGroup-2-5] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x88bb2231, L:/127.0.0.1:27439 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 18:01:36.887 ERROR 9008 --- [nioEventLoopGroup-2-3] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x7e584149, L:/127.0.0.1:27440 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 18:01:36.887 ERROR 9008 --- [nioEventLoopGroup-2-6] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xd48cd3d7, L:/127.0.0.1:27441 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 18:01:36.887 ERROR 9008 --- [nioEventLoopGroup-2-8] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x4fa8922c, L:/127.0.0.1:27444 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 18:01:36.887 ERROR 9008 --- [nioEventLoopGroup-2-7] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x0d9deb9e, L:/127.0.0.1:27442 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 18:01:36.887 ERROR 9008 --- [nioEventLoopGroup-2-2] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xa5afec3f, L:/127.0.0.1:27446 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 18:01:36.887 ERROR 9008 --- [nioEventLoopGroup-2-4] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x0e57f29b, L:/127.0.0.1:27443 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 18:01:36.887 ERROR 9008 --- [nioEventLoopGroup-2-3] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x56d1d721, L:/127.0.0.1:27447 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 18:01:36.887 ERROR 9008 --- [nioEventLoopGroup-2-4] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x55791de0, L:/127.0.0.1:27448 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-30 18:01:36.887 ERROR 9008 --- [nioEventLoopGroup-2-2] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xa45bc6f3, L:/127.0.0.1:27445 - R:/127.0.0.1:6379]
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:362)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
